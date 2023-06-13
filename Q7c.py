@@ -1,12 +1,13 @@
-s = input("enter a string: ")
+n = int(input("How many strings you will enter? "))
 d = {}
-for e in s:
-    if e not in d.keys():
-        d[e] = s.count(e)
+for i in range(n):
+    s = input(f"enter string {i+1} : ")
+    d[s] = len(s)
 print(d)
 
-
-
 # output:
-# enter a string: python programming
-# {'p': 2, 'y': 1, 't': 1, 'h': 1, 'o': 2, 'n': 2, ' ': 1, 'r': 2, 'g': 2, 'a': 1, 'm': 2, 'i': 1}
+# How many strings you will enter? 3
+# enter string 1 : gec
+# enter string 2 : python
+# enter string 3 : programming
+# {'gec': 3, 'python': 6, 'programming': 11}
